@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/Gotham-Bold.otf'
+        ) format('otf');
+}
+
+@font-face {
+    font-family: 'Gotham-light';
+    src: url('./assets/fonts/Gotham-Light.otf'
+        ) format('otf');
+}
