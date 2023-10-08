@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dc/static/css/main.cde10c16.css",
-    "main.js": "/dc/static/js/main.be1defc4.js",
+    "main.css": "/dc/static/css/main.92238ef4.css",
+    "main.js": "/dc/static/js/main.b1c59e32.js",
     "static/media/bg_img.png": "/dc/static/media/bg_img.de1c73a99c136857cbf1.png",
     "static/media/img_card.png": "/dc/static/media/img_card.965c507d05bd214806a2.png",
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/dc/static/media/PlayfairDisplay-Italic-VariableFont_wght.2f795353f413479428d6.ttf",
@@ -10,11 +10,11 @@
     "static/media/Gotham-Light.otf": "/dc/static/media/Gotham-Light.59aa40045d8df0b87a73.otf",
     "index.html": "/dc/index.html",
     "static/media/arrow.svg": "/dc/static/media/arrow.97a770a9869ad0d4708564d1aa20f146.svg",
-    "main.cde10c16.css.map": "/dc/static/css/main.cde10c16.css.map",
-    "main.be1defc4.js.map": "/dc/static/js/main.be1defc4.js.map"
+    "main.92238ef4.css.map": "/dc/static/css/main.92238ef4.css.map",
+    "main.b1c59e32.js.map": "/dc/static/js/main.b1c59e32.js.map"
   },
   "entrypoints": [
-    "static/css/main.cde10c16.css",
-    "static/js/main.be1defc4.js"
+    "static/css/main.92238ef4.css",
+    "static/js/main.b1c59e32.js"
   ]
 }
