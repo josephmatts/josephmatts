@@ -1,0 +1,87 @@
+/* HorizontalScrollableImageCards.css */
+.card-container {
+    display: flex;
+    overflow-x: scroll;
+    height: 60vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #131313;
+}
+
+.card {
+    width: 16vw;
+    height: 55vh;
+    /* Set the desired height of the image container */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 25px;
+    margin-right: 16px;
+    transform: translateY(5%);
+    transition: 0.3s;
+
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-arrow {
+    margin-right: 10vw;
+    max-height: 30px;
+}
+
+.right-arrow {
+    max-height: 30px;
+}
+
+.card-container-column {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card-title {
+    position: sticky;
+    top: 55vh;
+    text-align: center;
+    background: linear-gradient(to top, #1B6F69, transparent);
+    /* Optional: Add a semi-transparent background */
+    color: white;
+    /* Optional: Set title text color */
+    padding: 10px;
+    font-family: 'Gotham-light';
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.card img {
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+/* Optional: Hide the horizontal scrollbar */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 50vw;
+        height: 50vh;
+    }
+}

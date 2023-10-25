@@ -2,20 +2,56 @@
     text-align: center;
     position: absolute;
     border-bottom-left-radius: 25;
+    display: flex;
     border-bottom-right-radius: 25;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .app-body {
-    background: #131313;
-    min-height: 100vh;
+
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 100px;
+
 }
 
+.location {
+    display: flex;
+    font-family: 'Gotham-light';
+}
+
+.location p {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    padding-left: 20%;
+}
+
+.map-img {
+    width: 40vw;
+    border-radius: 15px;
+}
+
+.parent-app-body {
+    padding-top: 100px;
+    min-height: 100vh;
+    background: #131313;
+}
+
+
 .what-is-title {
+    font-family: 'Gotham';
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.what-we-do {
+    padding-top: 100px;
+    padding-bottom: 5px;
     font-family: 'Gotham';
     color: white;
     font-size: 48px;
@@ -31,11 +67,17 @@
 
 .scaffold {
     background: #131313;
+    overflow-x: hidden;
 }
 
 .BgImg {
-
+    width: 110vw;
+    height: 120vh;
     mix-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scale: 1.009;
 }
 
 .overlay-text {
@@ -65,23 +107,111 @@
     top: 10%;
     /* scale: .5; */
     position: absolute;
+
 }
 
 .container {
     position: absolute;
-    min-height: 100vh;
+    min-height: 100px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    margin-top: 70vh;
+
+}
+
+.arrow {
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    transform: translateY(70%) scaleY(1.2);
+    cursor: pointer;
+}
+
+.bg-img-container {
+    height: auto;
+    max-width: 100%;
+    background-size: contain;
+    /* Stretch the background image to cover the container */
+    background-position: center;
+    overflow-x: hidden;
 }
 
 .App-header {
     background: #1B6F69;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 600px) {
+    .dc-logo {
+        width: 50%;
+    }
+
+    .overlay-text {
+        font-size: 32px;
+    }
+
+    .find-us {
+        font-size: 16px;
+    }
+
+    .container {
+        margin-top: 50vh;
+    }
+
+    .text-column {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .what-is-title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .app-body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        overflow-x: hidden;
+    }
+
+    .what-we-do {
+        font-size: 24px;
+        padding-top: 50px;
+    }
+
+    .parent-app-body {
+        padding-top: 50px;
+    }
+
+    .location {
+        display: inline;
+        font-family: 'Gotham-light';
+
+    }
+
+    .location p {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-align: left;
+    }
+
+    .map-img {
+        width: 70vw;
+        border-radius: 15px;
+    }
 }

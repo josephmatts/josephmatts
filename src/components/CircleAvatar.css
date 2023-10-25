@@ -1,0 +1,12 @@
+.avatar {
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 100px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the entire circular area */
+    margin-right: 86px;
+    margin-bottom: 95px;
+}

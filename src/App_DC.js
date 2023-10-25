@@ -6,18 +6,29 @@ import arrow from './assets/arrow.svg';
 
 function AppDc() {
     const displayText = "Cultivating A Design Culture For Learners, Thinkers, Creators & Investors."
+
+    const handleScrollDown = () => {
+
+        window.scrollTo({
+            top: window.innerHeight + 150, // Adjust this value to the desired position
+            behavior: 'smooth', // Optional: Smooth scrolling animation
+        });
+    };
+
     return (
         <div className="scaffold">
             <div className="AppDC">
                 <header className="App-header">
-                    <img className='BgImg' src={bgImg} alt="" />
+                    <div className="bg-img-container">
+                        <img className='BgImg' src={bgImg} alt="" />
+                    </div>
                     <img src={dcLogo} alt="" className="dc-logo" />
                     <div className="text-column">
                         <p className="overlay-text">{displayText}</p>
                         <p className="find-us">Find Us</p>
                     </div>
-                    <div className="container">
-                        <img src={arrow} alt="" />
+                    <div className="container" onClick={handleScrollDown}>
+                        <img src={arrow} alt="arrow" className='arrow' />
                     </div>
                 </header>
             </div>
